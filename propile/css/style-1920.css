@@ -1,0 +1,41 @@
+.hero{
+    height: 100vh;
+    background: url(../img/hero-banner.jpg) no-repeat 50% 50% cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.hero .common-frame{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.hero h1{
+    font-size: 5rem;
+    line-height: 0.9;
+    font-weight: var(--weight2);
+}
+.aboutme{
+    margin-top: 6rem;
+}
+.about-title{
+    font-size: 5rem;
+}
+.about-title2{
+    font-size: 5rem;
+    margin-top: 1rem;
+}
+.ac1{
+    margin: 1rem 0;
+}
+.about-content{
+    margin-top: 6rem;
+    display: flex;
+    gap: 1rem;
+}
+.about-txt{
+    flex: 1;
+}
