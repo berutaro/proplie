@@ -1,5 +1,9 @@
 @media (max-width:1024px){
     .hero{
         height: 800px;
+    }
+    .deco-hero {
+        width: 238px;
+        }
 }
-}
+

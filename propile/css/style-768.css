@@ -5,5 +5,8 @@
     .hero h1{
         font-size: 40px;
     }
+    .deco-hero {
+        width: 180px;
+    }
 
 }

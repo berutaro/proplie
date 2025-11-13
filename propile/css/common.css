@@ -11,7 +11,7 @@
     --lnh120:1.2;
     --lnh150:1.5;
 }
-@media (min-width:1920px){
+@media (min-width:2000px){
     main{
         width: 1920px;
         margin: 0 auto;
