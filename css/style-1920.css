@@ -1,0 +1,73 @@
+.hero {
+    height: 100vh;
+    background: #141414;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+}
+.hero .common-frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+.hero-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 0.5rem;
+}
+.hero-heading,
+.hero-subtitle,
+.profile-title {
+    margin-bottom: 0.5rem;
+}
+.hero-heading {
+    font-size: var(--heading1);
+    line-height: var(--lnh140);
+    font-weight: var(--weight2);
+}
+.hero-subtitle {
+    font-size: var(--heading3);
+}
+.profile-title {
+    font-size: var(--heading1);
+    line-height: var(--lnh140);
+    font-weight: var(--weight2);
+    text-align: right;
+}
+.profile-name {
+    font-size: var(--heading3);
+}
+.hero figure {
+    margin-bottom: 2rem;
+}
+.aboutme {
+    margin-top: 6rem;
+}
+.about-title,
+.about-title2 {
+    font-size: 5rem;
+}
+.about-title2 {
+    margin-top: 1rem;
+}
+.ac1 {
+    margin: 1rem 0;
+}
+.about-content {
+    margin-top: 6rem;
+    display: flex;
+    gap: 1rem;
+}
+.about-txt {
+    flex: 1;
+}
+.deco-hero {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 333;
+}
+
