@@ -1,9 +1,10 @@
 .hero {
     height: 100vh;
     background: #141414;
-    justify-content: center;
     color: #fff;
     position: relative;
+    display: flex;
+    justify-content: center;    
 }
 .hero .common-frame {
     display: flex;
@@ -42,27 +43,6 @@
 .hero figure {
     margin-bottom: 2rem;
 }
-.aboutme {
-    margin-top: 6rem;
-}
-.about-title,
-.about-title2 {
-    font-size: 5rem;
-}
-.about-title2 {
-    margin-top: 1rem;
-}
-.ac1 {
-    margin: 1rem 0;
-}
-.about-content {
-    margin-top: 6rem;
-    display: flex;
-    gap: 1rem;
-}
-.about-txt {
-    flex: 1;
-}
 .deco-hero {
     position: absolute;
     left: 50%;
@@ -70,4 +50,94 @@
     transform: translate(-50%,-50%);
     z-index: 333;
 }
-
+.aboutme {
+    margin-top: 6rem;
+}
+.about-title-wrap .pc {
+    font-size: 5rem;
+    margin-top: 1rem;
+}
+.mo {
+    display: none;
+}
+.ac1 {
+    font-size: var(--body);
+    line-height: var(--lnh140);
+    margin: 1rem 0;
+}
+.values {
+    margin-top: 3rem;
+}
+.values .common-frame {
+    margin: 0;
+    padding: 0;
+}
+.values-row-bg {
+    margin: 0 auto;                 
+    background: #f7f6f9;
+    padding: 2rem;            
+    display: flex;
+    align-items: center;                 
+}
+.values-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.value-card {
+    padding: 2rem;
+    border-radius: 2.5px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+    background: rgba(202, 196, 208, 0.2);   
+    transition: all 0.1s ease-out;
+    flex: 1 1 100%;
+}
+.value-card.is-active {
+    background: #FFDE17;          
+}
+.value-icon { 
+    width: 3rem; 
+    height: 3rem; 
+    border-radius: 50%; 
+    background: #fff; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    flex-shrink: 0; 
+}
+.value-label {
+    font-size: var(--heading2);
+    line-height: var(--lnh140);
+    font-weight: var(--weight1);
+}
+.values-detail {
+    max-width: 890px;
+    margin: 3rem auto 0;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+.values-detail-title {
+    flex: 0 0 auto;
+    font-size: var(--heading3);
+    font-weight: var(--weight1);
+    line-height: var(--lnh140);
+    text-align: center;
+    white-space: nowrap;
+}
+.values-detail-body {
+    flex: 1;
+    font-size: var(--body);
+    line-height: var(--lnh140);
+}
+@media (min-width: 1200px){
+    .value-card {
+        flex: 0 0 calc((100% - 3 * 2rem) / 4); 
+    }
+}

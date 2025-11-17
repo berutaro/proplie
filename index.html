@@ -4,31 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>웹디자이너 임은경의 포트폴리오 홈페이지</title>
+
+    <!--CSS-->
     <link rel="stylesheet" href="./css/reset.css?v=1">
     <link rel="stylesheet" href="./css/font.css?v=1">
     <link rel="stylesheet" href="./css/common.css?v=1">
     <link rel="stylesheet" href="./css/style-1920.css?v=1">
     <link rel="stylesheet" href="./css/style-1024.css?v=1">
     <link rel="stylesheet" href="./css/style-768.css?v=1">
-
-    <!--뿅.js-->
-    <script src="./js/bbyoung.js"></script>
     <link rel="stylesheet" href="./css/interaction.css">
-    <script src="./js/observer.js"></script>
+
+    <!--JS-->
+    <script src="./js/bbyoung.js" defer></script>
+    <script src="./js/observer.js" defer></script>
+    <script src="./js/values.js" defer></script>
 </head>
 <body>
     <main>
-        <div class="hero">
-            <img class="deco-hero utd" src="./img/raspberry.png" alt="딸기이미지">
+        <section class="hero" aria-labelledby="hero-heading">
+            <img class="deco-hero utd" src="./img/raspberry.png" alt="산딸기 이미지">
             <div class="common-frame">
                 <div class="hero-title dtu">
-                    <section>
-                        <h1 class="hero-heading">
+                    <div class="hero-copy">
+                        <h1 id="hero-heading" class="hero-heading">
                             Design should be clean, readable,<br>
                             and refined.
                         </h1>
                         <p class="hero-subtitle">깔끔함과 가독성을 중심으로 디자인합니다.</p>
-                    </section>
+                    </div>
                     <p class="profile-title">
                         WEB DESIGNER<br>
                         <span class="profile-name">임은경</span>
@@ -38,34 +41,75 @@
                     <img src="./img/banner-logo2.svg" alt="임은경">
                 </figure>
             </div>
-        </div>
-        <div class="aboutme">
+        </section>
+        <section class="aboutme" id="about">
             <div class="common-frame">
-                <h2 class="about-title Pretendard bbyong">
-                    DESIGN WITH CLARITY ✦ CREATE
-                </h2>
-                <h2 class="about-title2 Pretendard bbyong">WITH PURPOSE
-                </h2>
-                <p class="ac1">명확한 의도로 디자인하고, 목적을 담아 창조합니다.</p>
-                <div class="about-content">
-                    <div class="about-txt">
-                        <h4>Clarity First</h4>
-                        <p>깔끔함은 디자인의 시작점입니다. 불필요한 요소를 덜어내고, 사용자가 가장 쉽게 이해할 수 있는 구조와 흐름을 고민합니다.
-                        보여주기 위한 디자인이 아니라, 의도를 전달하는 디자인을 추구합니다.</p>
-                        <h4>Collaborative Growth</h4>
-                        <p>함께하는 과정 속에서 더 큰 완성도가 만들어진다고 믿습니다.
-                        기획자, 개발자, 동료 디자이너와의 소통을 통해 의견을 조율하고 방향을 발전시키는 유연한 디자이너로 성장하고 있습니다.</p>
-                        <h4>Consistent Craft</h4>
-                        <p>디자인은 한순간의 결과물이 아니라, 세심한 반복과 정돈의 결과라고 생각합니다.
-                        작은 디테일 하나에도 흐름과 질서를 유지하며, 끝까지 완성도를 잃지 않는 디자인을 만듭니다.</p>
-                        <h4>Human-Centered Vision</h4>
-                        <p>결국 디자인은 사람을 위한 일이라고 생각합니다.
-                        사용자의 입장에서 생각하고, 감정과 경험이 머무는 인터페이스를 설계합니다.
-                        감성적인 균형과 실용적인 아름다움을 함께 담는 것이 저의 목표입니다.</p>
-                    </div>
+                <div class="about-title-wrap">
+                    <h2 class="about-title Pretendard bbyong pc tab">
+                        DESIGN WITH CLARITY ✦ CREATE<br> 
+                        WITH PURPOSE
+                    </h2>
+                    <h2 class="about-title Pretendard bbyong mo">
+                        DESIGN WITH<br> 
+                        CLARITY ✦<br>
+                        CREATE WITH<br>
+                        PURPOSE
+                    </h2>
                 </div>
+                <p class="ac1">명확한 의도로 디자인하고, 목적을 담아 창조합니다.</p>
+                <section class="values" aria-labelledby="values-heading">
+                    <div class="common-frame">
+                        <div class="values-row-bg">
+                            <div class="values-row">
+                                <button class="value-card is-active" 
+                                    type="button"
+                                    data-title="깔끔함은 디자인의 시작입니다."
+                                    data-body="불필요한 요소를 덜어내고, 사용자가 이해할 수 있는 구조와 흐름을 고민합니다. 보여주기 위한 디자인이 아니라, 의도를 전달하는 디자인을 추구합니다.">
+                                    <span class="value-icon">
+                                        <img src="./img/icon-i.svg" alt="Clarity First">
+                                    </span>
+                                    <span class="value-label">Clarity First</span>
+                                </button>
+                                <button class="value-card"
+                                    type="button"
+                                    data-title="함께할 때 디자인은 더 단단해집니다."
+                                    data-body="기획자, 개발자, 동료 디자이너와의 소통을 통해 의견을 조율하고 발전시키는 유연한 디자이너로 성장하고 싶습니다.">
+                                    <span class="value-icon">
+                                        <img src="./img/icon-e.svg" alt="Collaborative Grow">
+                                    </span>
+                                    <span class="value-label">Collaborative Grow</span>
+                                </button>
+                                <button class="value-card"
+                                    type="button"
+                                    data-title="디자인은 반복과 축적의 결과입니다."
+                                    data-body="작은 디테일 하나에도 세심하게 정성을 들여 흐름과 질서를 유지하고, 끝까지 완성도를 놓지 않는 디자인을 합니다.">
+                                    <span class="value-icon">
+                                        <img src="./img/icon-u.svg" alt="Consistent Craft">
+                                    </span>
+                                    <span class="value-label">Consistent Craft</span>
+                                </button>
+                                <button class="value-card"
+                                    type="button"
+                                    data-title="디자인은 사람을 이해하는 일입니다."
+                                    data-body="사용자의 입장에서 생각하고, 감정이 머무는 인터페이스를 설계합니다. 감성적이면서도 실용적인 아름다움을 함께 담는 것이 목표입니다.">
+                                    <span class="value-icon">
+                                        <img src="./img/icon-n.svg" alt="Human-Centered Vision">
+                                    </span>
+                                    <span class="value-label">Human-Centered Vision</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="values-detail">
+                            <h3 class="values-detail-title">깔끔함은 디자인의 시작입니다.</h3>
+                            <p class="values-detail-body">
+                                불필요한 요소를 덜어내고, 사용자가 이해할 수 있는 구조와 흐름을 고민합니다. 
+                                보여주기 위한 디자인이 아니라, 의도를 전달하는 디자인을 추구합니다.
+                            </p>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </div>
+        </section>
     </main> 
 </body>
 </html>

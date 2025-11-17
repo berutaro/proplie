@@ -18,6 +18,12 @@
         margin: 0 auto;
     }
 }
+html{
+    font-size: 20px;
+    font-family: 'Pretendard',sans-serif;
+    line-height: var(--lnh140);
+    -webkit-text-size-adjust: 100%;
+}
 h1{
     font-size: var(--heading1);
     font-weight: var(--weight1);
@@ -34,25 +40,18 @@ h4{
     font-size: var(--heading4);
     font-weight: var(--weight1);
 }
-html{
-    font-size: 20px;
-    font-family: 'Pretendard',sans-serif;
-    line-height: var(--lnh140);
-}
 .Pretendard{
     font-weight: var(--weight2);
 }
-
 .common-frame{
-    width: auto;
-    margin: 0 3rem;
+   margin: 0 3rem;   
+
 }
 @media (max-width:1024px){
     html{
         font-size: 18px;
     }
     .common-frame{
-        width: auto;
         margin: 0 2rem;
     }
 }
@@ -61,7 +60,6 @@ html{
         font-size: 14px;
     }
     .common-frame{
-        width: auto;
         margin: 0 1rem;
     }
 }

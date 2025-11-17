@@ -1,13 +1,9 @@
 @media (max-width:1024px){
-    .hero{
-        height: 100vh;
-    }
-    .about-title,
-    .about-title2 {
+    .about-title-wrap .pc,
+    .about-title-wrap .tab {
         font-size: 3rem;
-    }
-    .about-title2 {
         margin-top: 1rem;
+        line-height: var(--lnh140);
     }
     .deco-hero {
         width: 238px;
@@ -15,6 +11,10 @@
         left: 50%;
         transform: translateX(-50%);
     }
+    .value-card {
+        flex: 0 0 calc((100% - 2rem) / 2);
+    }
 }
+
 
 

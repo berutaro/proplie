@@ -1,9 +1,19 @@
-*{margin:0;padding:0;}
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
 ul,ol{
     list-style: none;
 }
 h1,h2,h3,h4,h5,h6{
     font-size: inherit;
+    font-weight: inherit;
 }
 a{
     color:inherit;
@@ -14,5 +24,14 @@ address{
 }
 table{
     border-collapse: collapse;
+    border-spacing: 0;
 }
-img{max-width: 100%;}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+button,input,textarea,select {
+    font: inherit;
+    color: inherit;
+}

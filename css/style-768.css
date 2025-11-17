@@ -1,12 +1,9 @@
 @media (max-width:768px){
-    .hero{
-        height: 100vh;
-        position: relative;
-    }
     .deco-hero {
         width: 180px;
         top: 38%;     
         left: 50%;
+        transform: translateX(-50%);
     }
     .hero .profile-title{
         position: absolute;
@@ -18,17 +15,42 @@
         transform: none;    
         opacity: 1;
     }
-    .hero-title.dtu{
-        transform: none;
-    }
+    .hero-title.dtu,
     .hero-title.dtu.on{
         transform: none;
     }
-     .about-title,
-    .about-title2{
-        font-size: 2rem;
-    }
-    .about-title2{
+    .about-title-wrap .mo {
         margin-top: 1rem;
+    }
+    .mo {
+        display: block;
+        font-size: 3rem;
+    }
+    .pc {
+        display: none;
+    }
+    .values-row { 
+        gap: 1rem;
+    }
+    .value-card {
+        flex: 0 0 calc(50% - 0.5rem);
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .values-detail {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        margin-top: 2.5rem;
+    }
+    .values-detail-body {
+        flex: 0 0 auto;
+        max-width: 26rem;
+        margin: 0 auto;
     }
 }
