@@ -46,7 +46,7 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        min-height: 180px;
+        min-height: 170px;
     }
     .values-detail {
         flex-direction: column;
@@ -61,5 +61,6 @@
         margin: 0 auto;
     }
 }
+
 
 
