@@ -29,28 +29,40 @@
     .pc {
         display: none;
     }
+    .values-row-bg {
+        padding: 1.25rem;
+    } 
     .values-row { 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1.25rem;
     }
-    .values-row-bg {
-        padding: 1.25rem;
-    } 
     .value-card {
-        aspect-ratio: 1 / 1;     
-        padding: 1.25rem;           
+        position: relative;
+        padding: 0;              
+        border: none;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    .value-card::before {
+        content: "";
+        display: block;
+        padding-top: 100%;    
+    }
+    .value-card-inner {
+        position: absolute;
+        inset: 1.25rem;         
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;   
+        justify-content: center;
         text-align: center;
         box-sizing: border-box;
     }
     .value-icon {
         width: 2.8rem;
         height: 2.8rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0.6rem;
     }
      .value-label {
         max-width: 6.5rem;     
