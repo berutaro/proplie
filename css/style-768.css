@@ -1,4 +1,8 @@
 @media (max-width:768px){
+    .hero{
+        height: 100vh;
+        position: relative;
+    }
     .deco-hero {
         width: 180px;
         top: 38%;     
@@ -19,6 +23,7 @@
     .hero-title.dtu.on{
         transform: none;
     }
+
     .about-title-wrap .mo {
         margin-top: 1rem;
     }
@@ -29,56 +34,64 @@
     .pc {
         display: none;
     }
+
     .values-row-bg {
         padding: 1.25rem;
+        display: block;
     } 
+
     .values-row { 
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.25rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
     }
+
     .value-card {
-        position: relative;
-        padding: 0;              
-        border: none;
-        overflow: hidden;
+        aspect-ratio: 1 / 1;        
+        padding: 1.25rem;
         box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
-    .value-card::before {
-        content: "";
-        display: block;
-        padding-top: 100%;    
-    }
+
     .value-card-inner {
-        position: absolute;
-        inset: 1.25rem;         
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 0.6rem;
         text-align: center;
-        box-sizing: border-box;
+        width: 100%;
+        margin: 0 auto;   
     }
+
     .value-icon {
-        width: 2.8rem;
-        height: 2.8rem;
-        margin-bottom: 0.6rem;
+        width: 2.6rem;
+        height: 2.6rem;
+        margin-bottom: 0.2rem;
+        flex-shrink: 0;
     }
-     .value-label {
-        max-width: 6.5rem;     
+
+    .value-label {
+        display: block;
+        max-width: none;          
+        margin: 0 auto;           
         line-height: var(--lnh140);
-        word-break: keep-all; 
+        word-break: keep-all;
+        text-align: center;
     }
+
     .values-detail {
         flex-direction: column;
         align-items: center;
         text-align: center;
         gap: 1rem;
-        margin-top: 2.5rem;
+        margin-top: 3rem;
     }
     .values-detail-body {
-        flex: 0 0 auto;
-        max-width: 26rem;
+        max-width: 24rem;
         margin: 0 auto;
     }
 }

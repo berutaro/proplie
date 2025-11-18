@@ -1,18 +1,74 @@
-@media (max-width:1024px){
-    .about-title-wrap .pc,
+@media (min-width:769px) and (max-width:1024px){
+    .hero { height: 100vh; }
+
     .about-title-wrap .tab {
         font-size: 3rem;
         margin-top: 1rem;
         line-height: var(--lnh140);
     }
+
+    .mo { display: none; }
+
     .deco-hero {
         width: 238px;
         top: 30vh;
         left: 50%;
         transform: translateX(-50%);
     }
+
+    .values-row-bg {
+        padding: 1.5rem;
+    }
+
+    .values-row {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.25rem;
+    }
+
     .value-card {
-        flex: 0 0 calc((100% - 2rem) / 2);
+        height: 11rem;
+        padding: 1.5rem;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;  
+        text-align: left;
+    }
+
+    .value-card-inner {
+        display: flex;
+        flex-direction: row;         
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+        text-align: left;
+    }
+
+    .value-icon {
+        width: 3rem;
+        height: 3rem;
+        margin-bottom: 0;            
+        flex-shrink: 0;
+    }
+
+    .value-label {
+        max-width: none;
+        line-height: var(--lnh140);
+        word-break: keep-all;
+    }
+
+    .values-detail {
+        flex-direction: column;
+        align-items: left;
+        text-align: left;
+        gap: 1rem;
+        margin-top: 2.5rem;
+    }
+
+    .values-detail-body {
+        max-width: 52.8rem;
+        margin: 0;
     }
 }
 
