@@ -35,18 +35,19 @@
     .values-row-bg {
         padding: 1rem;
     } 
-    .values-row {
+     .values-row {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-auto-rows: 1fr;
         gap: 1rem;
     }
     .value-card {
-        flex: 0 0 calc(50% - 0.5rem);
         padding: 1.25rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
-        min-height: 160px;
     }
     .values-detail {
         flex-direction: column;
@@ -61,7 +62,3 @@
         margin: 0 auto;
     }
 }
-
-
-
-
