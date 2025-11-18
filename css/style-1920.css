@@ -147,3 +147,113 @@
         flex: 0 0 calc((100% - 3 * 2rem) / 4); 
     }
 }
+
+.profile {
+    margin-top: 8rem;
+}
+.profile-heading {
+    font-size: 4.8rem;
+    letter-spacing: 0.08rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.profile .common-frame {
+    position: relative;
+}
+.profile .common-frame::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 46%;        
+    height: 100%;
+    background: rgba(202, 196, 208, 0.2);
+    z-index: -1;       
+}
+.profile-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+    column-gap: 3rem;
+}
+.profile-left {
+    background: transparent;
+    padding: 4rem 3.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-photo-wrap {
+    max-width: 280px;
+    width: 100%;
+    margin-bottom: 2.2rem;
+}
+.profile-photo {
+    width: 100%;
+    display: block;
+}
+.profile-intro-main {
+    font-size: var(--heading3);
+    font-weight: var(--weight1);
+    text-align: center;
+    margin-bottom: 0.8rem;
+}
+.profile-intro-sub {
+    font-size: var(--body);
+    line-height: var(--lnh140);
+    text-align: center;
+}
+.profile-right {
+    position: relative;
+    padding: 4rem 4rem 3.5rem 2rem;
+    background: rgba(202, 196, 208, 0.1);
+}
+.raspberry {
+    display: none;
+}
+.raspberry-pc {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 3rem;
+    transform: translateY(-75%);
+}
+.profile-info {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 3rem;
+    row-gap: 1rem;
+    font-size: var(--body);
+    margin-bottom: 3rem;
+}
+.profile-info-row {
+    display: contents;
+}
+.profile-info dt {
+    font-weight: var(--weight1);
+    letter-spacing: 0.08em;
+}
+.profile-info dd {
+    font-weight: var(--weight2);
+}
+.profile-cert-title {
+    font-size: var(--heading4);
+    font-weight: var(--weight1);
+    margin-bottom: 1rem;
+}
+.profile-cert-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.profile-cert-list li + li {
+    margin-top: 0.6rem;
+}
+.profile-cert-date {
+    display: inline-block;
+    width: 5rem;
+    font-weight: var(--weight1);
+}
+.profile-cert-text {
+    font-size: var(--body2);
+    line-height: var(--lnh140);
+}

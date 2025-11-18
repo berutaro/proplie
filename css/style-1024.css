@@ -70,7 +70,105 @@
         max-width: 52.8rem;
         margin: 0;
     }
+
+    .profile {
+        margin-top: 6rem;
+    }
+
+    .profile-heading {
+        font-size: 3.5rem;
+        text-align: center;
+        letter-spacing: 0.08em;
+        margin-bottom: 2.5rem;
+    }
+    .profile .common-frame::before {
+        width: 54%;
+    }
+
+    .profile-layout {
+        display: grid;
+        grid-template-columns: 0.95fr 1.05fr;
+        column-gap: 2rem;
+    }
+
+    .profile-left {
+        padding: 3rem 2.5rem 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: transparent; 
+    }
+
+    .profile-photo-wrap {
+        max-width: 240px;
+        width: 100%;
+        margin-bottom: 1.8rem;
+    }
+
+    .profile-intro-main {
+        font-size: 1.25rem;
+        font-weight: var(--weight1);
+        text-align: center;
+        margin-bottom: 0.7rem;
+    }
+
+    .profile-intro-sub {
+        font-size: 0.95rem;
+        line-height: 1.45;
+        text-align: center;
+    }
+
+    .profile-right {
+        position: relative;
+        padding: 3.2rem 3rem 3rem 2rem;
+        background: #ffffff;
+    }
+
+    .profile-info {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        column-gap: 2rem;
+        row-gap: 0.8rem;
+        font-size: 0.95rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .profile-cert-title {
+        font-size: 0.95rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .profile-cert-date {
+        width: 4.5rem;
+    }
+
+    .profile-cert-text {
+        font-size: 0.9rem;
+        line-height: 1.45;
+    }
+
+    .raspberry {
+        display: none;
+    }
+
+    .raspberry-tab-top {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 2rem;
+        width: 150px;
+        transform: translateY(-45%);
+    }
+
+    .raspberry-tab-bottom {
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -40px;
+        width: 190px;
+    }
 }
+
 
 
 

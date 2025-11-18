@@ -93,4 +93,78 @@
         line-height: var(--lnh140);         
         word-break: keep-all; 
     }
+
+    .profile {
+        margin-top: 4rem;
+        padding-bottom: 6rem; 
+    }
+
+    .profile-heading {
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .profile-layout {
+        display: block;
+    }
+
+    .profile-left {
+        background: #ffffff;
+        padding: 0 1.5rem 2.5rem;
+        align-items: center;
+    }
+
+    .profile-photo-wrap {
+        max-width: 260px;
+        width: 100%;
+        margin: 0 auto 1.5rem;
+    }
+
+    .profile-intro-main,
+    .profile-intro-sub {
+        text-align: center;
+    }
+
+    .profile-right {
+        padding: 0 1.5rem 0;
+    }
+
+    .raspberry {
+        display: none;
+    }
+
+    .raspberry-mo-mid {
+        display: block;
+        position: static;
+        margin: 2rem auto 2rem; 
+    }
+
+    .raspberry-mo-bottom {
+        display: block;
+        position: absolute;
+        left: 0.8rem;
+        bottom: 0;
+    }
+
+    .profile-info {
+        grid-template-columns: auto 1fr;
+        column-gap: 1.5rem;
+        row-gap: 0.8rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .profile-cert-title {
+        text-align: left;
+        margin-bottom: 0.8rem;
+    }
+
+    .profile-cert-date {
+        width: 4.5rem;
+    }
+
+    .profile-cert-text {
+        display: inline-block;
+        max-width: 100%;
+    }
 }
