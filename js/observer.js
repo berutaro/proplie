@@ -2,7 +2,7 @@
     // IntersectionObserver를 지원하지 않는 브라우저 방어
     if (!("IntersectionObserver" in window)) return;
 
-    const TARGET_SELECTOR = ".ltr, .utd, .dtu";
+    const TARGET_SELECTOR = ".ltr, .utd, .dtu, .rtl-deco";
     const OBSERVER_OPTIONS = {
         threshold: 0.1, // 요소가 10% 이상 보일 때 트리거
     };
