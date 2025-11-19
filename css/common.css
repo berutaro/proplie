@@ -11,6 +11,11 @@
     --lnh120:1.2;
     --lnh140:1.4;
     --lnh150:1.5;
+    --profile-top-bg: rgba(202, 196, 208, 0.2);  
+    --profile-bottom-bg: rgba(202, 196, 208, 0.1);                
+}
+main{
+    overflow-x: hidden;
 }
 @media (min-width:2000px){
     main{
