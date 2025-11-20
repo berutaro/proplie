@@ -182,7 +182,6 @@
 .profile {
     margin-top: 6rem;
     position: relative;
-    /* overflow: hidden; */
 }
 
 .profile-deco {
@@ -420,6 +419,29 @@
 .exp-card:hover {
     transform: translateY(-4px);
 }
+
+
+.skills-title {
+    margin-top: 6rem;
+    font-size: 5rem;
+    font-weight: var(--weight2);
+    line-height: var(--lnh140);
+    text-align: center;
+}
+
+.skills-visual {
+    width: 100%;
+    display: flex;
+    justify-content: center;  
+    margin: 4rem 0 2rem;      
+}
+
+.skills-visual img {    
+    max-width: 1200px;
+    height: auto;
+    display: block;
+}
+
 
 @media (max-width:1700px){
     .value-card-inner {

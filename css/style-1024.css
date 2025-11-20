@@ -202,6 +202,21 @@
     .exp-detail {
         white-space: nowrap;
     }
+
+    .skills-title {
+        font-size: 3rem;
+    }
+
+    .skills-visual {
+        margin: 3rem 0 1.5rem;
+    }
+
+    .skills-visual img {
+        width: 90%;
+        max-width: 900px;
+    }
+
+
 }
 
 

@@ -249,6 +249,17 @@
         display: block;
         white-space: normal;
     }
+
+    .skills-visual {
+        margin: 2rem 0 1.5rem;
+        padding: 0 1rem; 
+    }
+
+    .skills-visual img {
+        width: 100%;
+        max-width: 100%;
+    }
+  
 }
 
 
@@ -289,5 +300,17 @@
         margin: 0 0 3rem;
         padding: 0 1.5rem;      
         text-align: left;
+    }
+
+    .skills-title {
+        font-size: 3rem;
+    }
+
+    .skills-visual {
+        margin: 1.5rem 0 1rem;
+    }
+
+    .skills-visual img {
+        width: 100%;
     }
 }
