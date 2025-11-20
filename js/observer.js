@@ -1,10 +1,9 @@
 (() => {
-    // IntersectionObserver를 지원하지 않는 브라우저 방어
     if (!("IntersectionObserver" in window)) return;
 
     const TARGET_SELECTOR = ".ltr, .utd, .dtu, .rtl-deco";
     const OBSERVER_OPTIONS = {
-        threshold: 0.1, // 요소가 10% 이상 보일 때 트리거
+        threshold: 0.1, 
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -12,10 +11,10 @@
             const { target, isIntersecting } = entry;
 
             if (isIntersecting) {
-                // 화면에 들어왔을 때
+                
                 target.classList.add("on");
             } else {
-                // 화면 밖으로 나갔을 때
+                
                 target.classList.remove("on");
             }
         });
