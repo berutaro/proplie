@@ -12,14 +12,18 @@
     <link rel="stylesheet" href="./css/style-1920.css?v=1">
     <link rel="stylesheet" href="./css/style-1024.css?v=1">
     <link rel="stylesheet" href="./css/style-768.css?v=1">
-    <link rel="stylesheet" href="./css/interaction.css">
+    <link rel="stylesheet" href="./css/interaction.css?v=1">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css"/>
 
     <!--JS-->
-    <script src="./js/header.js"></script>
+    <script src="./js/header.js" defer></script>
     <script src="./js/bbyoung.js" defer></script>
     <script src="./js/observer.js" defer></script>
     <script src="./js/values.js" defer></script>
     <script src="./js/exp-drag.js" defer></script>
+    <!-- <script src="./js/visual-marquee.js" defer></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="./js/banner.js" defer></script>
 </head>
 <body>
     <main>
@@ -125,7 +129,6 @@
             <div class="common-frame">
                 <h2 class="profile-heading">PROFILE</h2>
                 <div class="profile-layout">
-                    <!-- 왼쪽 영역 -->
                     <div class="profile-left">
                         <figure class="profile-photo-wrap">
                             <img src="./img/profile-photo.jpg" alt="임은경 증명 사진" class="profile-photo">
@@ -138,7 +141,6 @@
                             </p>
                         </div>
                     </div>
-                    <!-- 오른쪽 영역 -->
                     <div class="profile-right">
                         <dl class="profile-info">
                             <div class="profile-info-row">
@@ -235,6 +237,151 @@
                         <img src="./img/skills-1920.png" alt="디자인 스택과 사용 툴을 설명하는 다이어그램 이미지">
                     </picture>
                 </figure>
+                <div class="skills-showcase">
+                    <div class="skills-track">
+                        <figure class="skills-card">
+                            <img src="./img/skill-ai.svg" alt="Adobe Illustrator 활용 능력을 설명하는 이미지">
+                        </figure>
+                        <figure class="skills-card">
+                            <img src="./img/skill-ps.svg" alt="Adobe Photoshop 활용 능력을 설명하는 이미지">
+                        </figure>
+                        <figure class="skills-card">
+                            <img src="./img/skill-figma.svg" alt="Figma 활용 능력을 설명하는 이미지">
+                        </figure>
+                        <figure class="skills-card">
+                            <img src="./img/skill-css.svg" alt="CSS 활용 능력을 설명하는 이미지">
+                        </figure>
+                        <figure class="skills-card">
+                            <img src="./img/skill-html.svg" alt="HTML 활용 능력을 설명하는 이미지">
+                        </figure>
+                         <figure class="skills-card">
+                            <img src="./img/skill-js.svg" alt="JavaScript 활용 능력을 설명하는 이미지">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="visual-section">
+            <div class="visual-bg-text visual-top-text">VISUAL</div>
+            <div class="visual-logo">
+                <img src="./img/ieun-logo.svg" alt="IEUN 로고">
+            </div>
+            <div class="visual-track visual-track-top">
+                <div class="track-inner">
+                    <img src="./img/v1.png" alt="">
+                    <img src="./img/v2.png" alt="">
+                    <img src="./img/v3.png" alt="">
+                    <img src="./img/v4.png" alt="">
+                    <img src="./img/v5.png" alt="">
+                    <img src="./img/v6.png" alt="">
+                    <img src="./img/v7.png" alt="">
+                    <img src="./img/v8.png" alt="">
+                    <img src="./img/v9.png" alt="">
+                </div>
+                <div class="track-inner">
+                    <img src="./img/v1.png" alt="">
+                    <img src="./img/v2.png" alt="">
+                    <img src="./img/v3.png" alt="">
+                    <img src="./img/v4.png" alt="">
+                    <img src="./img/v5.png" alt="">
+                    <img src="./img/v6.png" alt="">
+                    <img src="./img/v7.png" alt="">
+                    <img src="./img/v8.png" alt="">
+                    <img src="./img/v9.png" alt="">
+                </div>
+            </div>
+            <div class="visual-track visual-track-bottom">
+                <div class="track-inner">
+                    <img src="./img/v10.png" alt="">
+                    <img src="./img/v11.png" alt="">
+                    <img src="./img/v12.png" alt="">
+                    <img src="./img/v13.png" alt="">
+                    <img src="./img/v14.png" alt="">
+                    <img src="./img/v15.png" alt="">
+                    <img src="./img/v16.png" alt="">
+                    <img src="./img/v17.png" alt="">
+                    <img src="./img/v18.png" alt="">
+                    <img src="./img/v19.png" alt="">
+                    <img src="./img/v20.png" alt="">
+                </div>
+                <div class="track-inner">
+                    <img src="./img/v10.png" alt="">
+                    <img src="./img/v11.png" alt="">
+                    <img src="./img/v12.png" alt="">
+                    <img src="./img/v13.png" alt="">
+                    <img src="./img/v14.png" alt="">
+                    <img src="./img/v15.png" alt="">
+                    <img src="./img/v16.png" alt="">
+                    <img src="./img/v17.png" alt="">
+                    <img src="./img/v18.png" alt="">
+                    <img src="./img/v19.png" alt="">
+                    <img src="./img/v20.png" alt="">
+                </div>
+            </div>
+            <div class="visual-bg-text visual-bottom-text">CONCEPTS</div>
+        </section>
+        <section class="banner-section" id="banner">
+            <div class="common-frame">
+                <div class="section-header">
+                    <h2 class="exp-title dtu">EXPERIENCES ✦</h2>
+                </div>
+                <div class="swiper banner-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                             <figure class="banner-img">
+                                <picture>
+                                     <source srcset="./img/banner1-pc.jpg" media="(min-width: 1024px)" alt="블랙 프라이데이 행사 이미지">
+                                     <source srcset="./img/banner1-tab.jpg" media="(min-width: 768px)" alt="블랙 프라이데이 행사 이미지">
+                                     <img src="./img/banner1-mo.jpg" alt="블랙 프라이데이 행사 이미지">
+                                </picture>
+                             </figure>
+                             <div class="banner-txt">
+                                <h4>Black Friday Promotion Banner</h4>
+                                <p>연말 프로모션을 위한 블랙프라이데이 메인 배너 디자인입니다. 강렬한 대비와 네온 포인트 컬러를 활용해 할인 정보를 직관적으로 전달하도록 구성했습니다.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="banner-img">
+                                <picture>
+                                     <source srcset="./img/banner2-pc.jpg" media="(min-width: 1024px)" alt="나이키 신발 행사 이미지">
+                                     <source srcset="./img/banner2-tab.jpg" media="(min-width: 768px)" alt="나이키 신발 행사 이미지">
+                                     <img src="./img/banner2-mo.jpg" alt="나이키 신발 행사 이미지">
+                                </picture>
+                            </figure>
+                            <div class="banner-txt">
+                                <h4>Offline Store Promotion Banner</h4>
+                                <p>전국 오프라인 매장의 할인 혜택을 강조한 프로모션 배너 디자인입니다. 메인 타이포와 제품 이미지를 전면에 배치하고, 컬러 대비를 통해 정보를 인식하도록 구성했습니다.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="banner-img">
+                                <picture>
+                                     <source srcset="./img/banner3-pc.jpg" media="(min-width: 1024px)" alt="빵냥이 그랜드 오픈 이미지">
+                                     <source srcset="./img/banner3-tab.jpg" media="(min-width: 768px)" alt="빵냥이 그랜드 오픈 이미지">
+                                     <img src="./img/banner3-mo.jpg" alt="빵냥이 그랜드 오픈 이미지">
+                                </picture>
+                            </figure>
+                            <div class="banner-txt">
+                                <h4>Bbangnyang - Grand Opening Banner</h4>
+                                <p>가상의 베이커리 브랜드 ‘빵냥이’를 기획하며 제작한 그랜드 오픈 프로모션 배너입니다. 파스텔 톤의 컬러 팔레트와 자연광 제품 컷을 활용하고, 중앙에는 정보와 CTA 버튼을 배치하여 시선 흐름을 최적화했습니다.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="banner-img">
+                                <picture>
+                                     <source srcset="./img/banner4-pc.jpg" media="(min-width: 1024px)" alt="Cats&Dog 그랜드 오픈 이미지">
+                                     <source srcset="./img/banner4-tab.jpg" media="(min-width: 768px)" alt="Cats&Dog 그랜드 오픈 이미지">
+                                     <img src="./img/banner4-mo.jpg" alt="Cats&Dog 그랜드 오픈 이미지">
+                                </picture>
+                            </figure>
+                            <div class="banner-txt">
+                                <h4>Cats&Dog Website Redesign - Opening Event Main Banner</h4>
+                                <p>“반려동물 도매 플랫폼 Cats&Dog의 메인 페이지 리디자인을 위해 제작한 오픈 이벤트 배너입니다. 따뜻한 색감과 여백 기반의 레이아웃을 사용하고, 핵심 메시지와 CTA를 명확하게 전달하도록 UI를 재구성했습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </section>
     </main> 
