@@ -212,10 +212,68 @@
     }
 
     .skills-visual img {
-        width: 90%;
+        width: 100%;
         max-width: 900px;
     }
 
+    .visual-section { 
+        height: 1142px;
+    }
+
+    .visual {
+        margin-top: 5rem;
+        padding: 3rem 0 4rem;
+    }
+
+    .visual-logo {
+        width: 4.5rem;
+         display: flex;
+         justify-content: center;
+         z-index: 3;
+        }
+
+    .visual-bg-text {
+        font-size: 15.5rem;
+    }
+    
+    .visual-bg {
+        letter-spacing: 0.16em;
+    }
+    
+    .visual-bg-top {
+        font-size: 6.5rem;
+    }
+    
+    .visual-bg-bottom {
+        font-size: 6.5rem;
+    }
+    
+    .visual-row {
+        margin-bottom: 1.5rem;
+    }
+    
+    .visual-card {
+        flex: 0 0 13rem;   
+    }
+
+    .visual-track img {
+        height: 90%;
+    }
+    
+    .visual-row-top .visual-track,
+    .visual-row-bottom .visual-track {
+        animation-duration: 32s;
+    }
+
+    .banner-slider .swiper-horizontal > .swiper-pagination-bullets,
+    .banner-slider .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .banner-slider .swiper-pagination-custom,
+    .banner-slider .swiper-pagination-fraction {
+        left: 0;
+        top: initial;
+        bottom: 7.2rem;
+        width: 100%;
+    }
 
 }
 

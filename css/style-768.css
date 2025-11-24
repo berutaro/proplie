@@ -313,4 +313,49 @@
     .skills-visual img {
         width: 100%;
     }
+
+    .visual {
+        margin-top: 4rem;
+        padding: 2.5rem 0 3.5rem;
+    }
+    
+    .visual-bg {
+        justify-content: flex-start;
+        padding-top: 3rem;
+    }
+    
+    .visual-bg-top {
+        font-size: 4rem;
+    }
+    
+    .visual-bg-bottom {
+        font-size: 4rem;
+    }
+    
+    .visual-row {
+        margin-bottom: 1.2rem;
+    }
+    
+    .visual-card {
+        flex: 0 0 10rem;
+    }
+    
+    .visual-row-top .visual-track,
+    .visual-row-bottom .visual-track {
+        animation-duration: 28s;
+    }
+    
+    .banner-txt {
+        flex-direction: column;
+    }
+
+    .banner-slider .swiper-horizontal > .swiper-pagination-bullets,
+    .banner-slider .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .banner-slider .swiper-pagination-custom,
+    .banner-slider .swiper-pagination-fraction {
+        left: 0;
+        top: initial;
+        bottom: 15.2rem;
+        width: 100%;
+    }
 }
