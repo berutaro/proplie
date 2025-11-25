@@ -204,7 +204,7 @@
     }
 
     .skills-title {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     .skills-visual {
@@ -216,48 +216,21 @@
         max-width: 900px;
     }
 
-    .visual-section { 
-        height: 1142px;
-    }
 
-    .visual {
-        margin-top: 5rem;
-        padding: 3rem 0 4rem;
-    }
-
-    .visual-logo {
-        width: 4.5rem;
-         display: flex;
-         justify-content: center;
-         z-index: 3;
-        }
-
-    .visual-bg-text {
-        font-size: 15.5rem;
+    
+    .visual-top-text {
+        font-size: 15rem;
+        margin-top: 0rem;
+        margin-bottom: -6rem;
     }
     
-    .visual-bg {
-        letter-spacing: 0.16em;
+    .visual-bottom-text {
+        font-size: 10rem;
+        margin-top: -1.5rem;
     }
     
-    .visual-bg-top {
-        font-size: 6.5rem;
-    }
-    
-    .visual-bg-bottom {
-        font-size: 6.5rem;
-    }
-    
-    .visual-row {
-        margin-bottom: 1.5rem;
-    }
-    
-    .visual-card {
-        flex: 0 0 13rem;   
-    }
-
-    .visual-track img {
-        height: 90%;
+    .visual-track-top {
+        margin: 3rem 0 1rem;
     }
     
     .visual-row-top .visual-track,
@@ -271,8 +244,37 @@
     .banner-slider .swiper-pagination-fraction {
         left: 0;
         top: initial;
-        bottom: 7.2rem;
+        bottom: 8.5rem;
         width: 100%;
+    }
+
+    .text {
+       font-size: 4rem;
+    }
+
+    img:nth-child(1) {
+        grid-area: 1/3/12/17;
+    }
+    
+    img:nth-child(2) {
+        grid-area: 25/5/17/20;
+    }
+
+
+    .project-logo {
+        width: 80px;
+    }
+
+    .project-hero {      
+        margin: 0 auto -2.5rem;
+    }
+
+    .project-hero img {
+        margin: 0 auto 2rem;
+    }
+
+    .project-section-title {
+        font-size: 6rem;
     }
 
 }

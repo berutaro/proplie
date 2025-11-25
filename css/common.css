@@ -15,7 +15,7 @@
     --profile-bottom-bg: rgba(202, 196, 208, 0.1);                
 }
 main{
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 @media (min-width:2000px){
     main{

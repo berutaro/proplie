@@ -250,6 +250,10 @@
         white-space: normal;
     }
 
+    .skills-title {
+        font-size: 3.5rem;
+    }
+
     .skills-visual {
         margin: 2rem 0 1.5rem;
         padding: 0 1rem; 
@@ -258,6 +262,51 @@
     .skills-visual img {
         width: 100%;
         max-width: 100%;
+    }
+
+
+   .visual-top-text {
+        font-size: 9.5rem;
+        margin-top: 0rem;
+        margin-bottom: -4.5rem;
+    }
+    
+    .visual-bottom-text {
+        font-size: 6.5rem;
+        margin-top: -1.2rem;
+    }
+
+    .banner-txt {
+        margin-top: 1rem;
+        display: flex;
+        gap: 0.5rem;
+        flex-direction: column;
+    }
+
+    .text {
+       font-size: 3rem;
+    }
+
+    img:nth-child(1) {
+        grid-area: 1/1/13/21;
+    }
+    
+    img:nth-child(2) {
+        grid-area: 19/1/25/21;
+    }
+
+
+
+    .project-logo {
+        width: 70px;
+    }
+
+    .project-section-title {
+        font-size: 5rem;             
+    }
+
+    .project-hero {      
+        margin: 0 auto -2rem;
     }
   
 }
@@ -295,7 +344,7 @@
     }
 
     .exp-title {
-        font-size: 2rem;
+        font-size: 2.5rem;
         line-height: var(--lnh140);
         margin: 0 0 3rem;
         padding: 0 1.5rem;      
@@ -303,7 +352,7 @@
     }
 
     .skills-title {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .skills-visual {
@@ -332,6 +381,17 @@
         font-size: 4rem;
     }
     
+    .visual-top-text {
+        font-size: 7rem;
+        margin-top: 0;
+        margin-bottom: -4.2rem;
+    }
+    
+    .visual-bottom-text {
+        font-size: 4.5rem;
+        margin-top: -0.6rem;
+    }
+
     .visual-row {
         margin-bottom: 1.2rem;
     }
@@ -355,7 +415,31 @@
     .banner-slider .swiper-pagination-fraction {
         left: 0;
         top: initial;
-        bottom: 15.2rem;
+        bottom: 10.1rem;
         width: 100%;
     }
+
+    .text {
+       font-size: 2.3rem;
+    }
+
+
+
+    .project-logo {
+        width: 60px;
+    }
+
+    .project-section-title {
+        font-size: 3.5rem;             
+    }
+
+    .project-hero {      
+        margin: 0 auto -1.3rem;
+    }
+
+    .project-hero p {
+        line-height: var(--lnh150);
+        font-size: 0.7rem;
+    }
+ 
 }
