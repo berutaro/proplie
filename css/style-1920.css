@@ -629,6 +629,12 @@
     color: #000000;
     z-index: -2;
     text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+.text span{
+    display: block;
+    font-size: 1rem;
+    margin-top: 0.5rem;;
 }
 
 .outline-text {
