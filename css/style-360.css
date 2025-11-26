@@ -1,0 +1,131 @@
+@media (max-width:360px){
+
+    .mo {
+        display: block;
+        font-size: 2.5rem;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .value-label {
+        font-size: 1rem;
+    }
+
+    .profile-heading {
+        font-size: 3rem;
+        text-align: center;
+        margin: 0;
+        padding: 0rem 1.5rem 5rem;
+        background: var(--profile-top-bg);
+    }
+    
+    .profile-deco {
+        position: absolute;
+        right: 7rem;
+        top: 43rem;
+        width: 5.5rem;
+        transform: rotate(20deg);
+    }
+
+    .exp-title {
+        font-size: 2.5rem;
+        line-height: var(--lnh140);
+        margin: 0 0 3rem;
+        padding: 0 1.5rem;      
+        text-align: left;
+    }
+
+    .skills-title {
+        font-size: 2.5rem;
+    }
+
+    .skills-visual {
+        margin: 1.5rem 0 1rem;
+    }
+
+    .skills-visual img {
+        width: 100%;
+    }
+
+    .visual {
+        margin-top: 4rem;
+        padding: 2.5rem 0 3.5rem;
+    }
+    
+    .visual-bg {
+        justify-content: flex-start;
+        padding-top: 3rem;
+    }
+    
+    .visual-bg-top {
+        font-size: 4rem;
+    }
+    
+    .visual-bg-bottom {
+        font-size: 4rem;
+    }
+    
+    .visual-top-text {
+        font-size: 7rem;
+        margin-top: 0;
+        margin-bottom: -4.2rem;
+    }
+    
+    .visual-bottom-text {
+        font-size: 4.5rem;
+        margin-top: -0.6rem;
+    }
+
+    .visual-row {
+        margin-bottom: 1.2rem;
+    }
+    
+    .visual-card {
+        flex: 0 0 10rem;
+    }
+    
+    .visual-row-top .visual-track,
+    .visual-row-bottom .visual-track {
+        animation-duration: 28s;
+    }
+    
+    .banner-txt {
+        flex-direction: column;
+    }
+
+    .banner-slider .swiper-horizontal > .swiper-pagination-bullets,
+    .banner-slider .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .banner-slider .swiper-pagination-custom,
+    .banner-slider .swiper-pagination-fraction {
+        left: 0;
+        top: initial;
+        bottom: 10.1rem;
+        width: 100%;
+    }
+
+    .text {
+       font-size: 2.3rem;
+    }
+
+
+
+    .project-logo {
+        width: 60px;
+    }
+
+    .project-section-title {
+        font-size: 3.5rem;             
+    }
+
+    .project-hero {      
+        margin: 0 auto -1.3rem;
+    }
+
+    .project-hero p {
+        line-height: var(--lnh150);
+        font-size: 0.7rem;
+    }
+ 
+}

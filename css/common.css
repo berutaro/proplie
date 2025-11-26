@@ -68,3 +68,27 @@ h4{
         margin: 0 1rem;
     }
 }
+@media (max-width: 600px) {
+    html {
+        font-size: 13px;
+    }
+    .common-frame {
+        margin: 0 0.9rem;
+    }
+}
+@media (max-width:430px){
+    html{
+        font-size: 12px;
+    }
+    .common-frame{
+        margin: 0 0.6rem; 
+    }
+}
+@media (max-width: 360px) {
+    html {
+        font-size: 11px;
+    }
+    .common-frame {
+        margin: 0 0.7rem;   
+    }
+}
