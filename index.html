@@ -27,10 +27,42 @@
     <script src="./js/banner.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>    
+    <script src="./js/header.js"></script>
 </head>
 <body>
+    <header>
+        <div class="common-frame">
+            <ul class="gnb">
+                <li><a href="#hero">HOME</a></li>
+                <li><a href="#aboutme">ABOUT</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#visualconcerts">VISUAL</a></li>
+                <li><a href="#banner">BANNERS</a></li>
+                <li><a href="#detailpage">UI PAGE</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="./img/resume.jpg" target="_blank">RESUME</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="btn-menu">
+        <img class="btn-menu-img" src="./img/menu.svg" alt="모바일 메뉴 버튼">
+    </div>
+    <div class="header-smart fadeout">
+        <ul class="gnb-smart">
+            <li><a href="#hero">HOME</a></li>
+            <li><a href="#aboutme">ABOUT</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#visualconcerts">VISUAL</a></li>
+            <li><a href="#banner">BANNERS</a></li>
+            <li><a href="#detailpage">UI PAGE</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="./img/resume.jpg" target="_blank">RESUME</a></li>
+        </ul>
+    </div>
     <main>
-        <section class="hero" aria-labelledby="hero-heading">
+        <section class="hero" id="hero" aria-labelledby="hero-heading">
             <img class="deco-hero utd" src="./img/raspberry.png" alt="산딸기 이미지">
             <div class="common-frame">
                 <div class="hero-title dtu">
@@ -51,7 +83,7 @@
                 </figure>
             </div>
         </section>
-        <section class="aboutme" id="about">
+        <section class="aboutme" id="aboutme">
             <div class="common-frame">
                 <div class="about-title-wrap">
                     <h2 class="about-title Pretendard bbyong pc tab mo">
@@ -264,7 +296,7 @@
                 </div>
             </div>
         </section>
-        <section class="visual-section">
+        <section class="visual-section" id="visualconcerts">
             <div class="visual-bg-text visual-top-text">VISUAL</div>
             <div class="visual-track visual-track-top swiper">
                 <div class="track-inner track1 swiper-wrapper">
@@ -385,21 +417,21 @@
                 </div>
             </div>
         </section>
-        <div class="projects">
+        <section class="projects detail-section" id="detailpage">
             <h1 class="text">
                 DETAIL PAGE DESIGN ✦
-                <span>가로 사이즈 1024px 상세페이지 디자인입니다.</span>
+                <span class="text-sub">가로 사이즈 1024px 기준으로<br>제작한 상세페이지 디자인입니다.</span>
             </h1>
-            <div id="wrapper">
-                <section id="content">
-                    <section class="images">
-                        <img src="./img/로션-상세페이지.jpg" alt="로션 상세페이지">
-                        <img src="./img/의자-상세페이지.jpg" alt="의자 상세페이지">
+            <div id="wrapper" class="detail-wrapper">
+                <section id="content" class="detail-content" aria-label="상세페이지 디자인 모음">
+                    <section class="images detail-images">
+                        <img src="./img/로션-상세페이지.jpg" alt="로션 제품 상세페이지 디자인">
+                        <img src="./img/의자-상세페이지.jpg" alt="의자 제품 상세페이지 디자인">
                     </section>
                 </section>
             </div>
-        </div>
-        <section class="project-section">
+        </section>
+        <section class="project-section" id="projects">
             <div class="project-hero">
                 <img class="project-logo" src="./img/ieun-logo.svg" alt="IEUN 로고">
                 <p>기획부터 와이어프레임, 디자인, 프로토타입까지 전 과정을 직접 수행하였습니다.
@@ -410,22 +442,48 @@
                 <h2 class="project-section-title">PROJECTS</h2>
             </div>
             <article class="project-item">
-                <a href="./project1.html" class="project1-link">
+                <a href="./project1.html" class="project1-link" target="_blank">
                     <div class="project-thumb">
                         <img src="./img/Project1.jpg" alt="빵냥이 프로젝트 썸네일" >
                     </div>
                     <h4 class="project-title">빵냥이</h4>
                 </a>
+                <div class="project-links">
+                    
+                    <a href="https://www.figma.com/design/EDPAAgjX1FLPhcmvEhsbSk/%EB%B9%B5%EB%83%A5%EC%9D%B4?node-id=0-1&t=uvT8uW0Vp3kt2jsu-1" class="project-btn" target="_blank">Figma</a>
+                    <a href="https://bbangnyang.dothome.co.kr/" class="project-btn" target="_blank">Website</a>
+                </div>
             </article>
             <article class="project-item">
-                <a href="./project2.html" class="project2-link">
+                <a href="./project2.html" class="project2-link" target="_blank">
                     <div class="project-thumb">
                         <img src="./img/Project2.jpg" alt="CATS&DOG 프로젝트 썸네일">
                     </div>
                     <h4 class="project-title">CATS&DOG</h4>
                 </a>
+                    <div class="project-links">
+                        <a href="https://www.figma.com/design/O35AXOdfz6VmN4KCYbrV3J/CATS-DOG?node-id=0-1&t=krfzXhXe99vuoB4E-1" class="project-btn" target="_blank">Figma</a>
+                    </div>
             </article>
         </section>
+        <!-- <div class="section-spacer"></div> -->
+        <footer class="footer-section">
+        <div class="footer-inner">
+            <h2 class="footer-title">
+                LET'S CREATE GREAT THINGS <br>
+                TOGETHER
+            </h2>
+            <p class="footer-sub">
+                사용자 경험을 최우선으로 생각하는 디자이너가 되겠습니다.
+            </p>
+            <div class="footer-divider"></div>
+            <div class="footer-btn-wrap">
+                <a href="./img/resume.jpg" target="_blank">
+                    <img src="./img/btn-resume.png" alt="이력서 보기 버튼">
+                </a>
+            </div>
+        </div>
+    </footer>
     </main> 
     <!-- GSAP + ScrollTrigger CDN -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
