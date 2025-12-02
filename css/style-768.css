@@ -161,10 +161,10 @@
     .profile-intro-sub {
         text-align: center;
     }
-
+    
     .profile-right {
         background: var(--profile-bottom-bg);
-        padding: 3rem 2rem 3rem;
+        padding: 3rem 0rem 3rem;
         position: relative;
     }
 
@@ -260,6 +260,10 @@
     }
 
 
+    .visual-title { 
+        font-size: 3.5rem;
+    }
+
    .visual-top-text {
         font-size: 9.5rem;
         margin-top: 0rem;
@@ -303,5 +307,23 @@
     .project-hero {      
         margin: 0 auto -2rem;
     }
-  
+    
+    .images {
+        padding-top: 60vh;
+        position: relative;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(20, 4.5%);
+        grid-template-rows: repeat(30, 3.5%);
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        z-index: 1;
+        object-fit: cover;
+    }
+
+    .footer-title {
+        font-size: 3.5rem;
+    }
+
 }

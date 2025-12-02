@@ -2,7 +2,7 @@
 
     .mo {
         display: block;
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .pc {
@@ -24,13 +24,13 @@
     .profile-deco {
         position: absolute;
         right: 7rem;
-        top: 43rem;
+        top: 44rem;
         width: 5.5rem;
         transform: rotate(20deg);
     }
 
     .exp-title {
-        font-size: 2.5rem;
+        font-size: 3rem;
         line-height: var(--lnh140);
         margin: 0 0 3rem;
         padding: 0 1.5rem;      
@@ -38,7 +38,7 @@
     }
 
     .skills-title {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .skills-visual {

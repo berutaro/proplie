@@ -2,7 +2,7 @@
 
     .mo-600 {
         display: block;
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     }
 
     .pc {
@@ -30,7 +30,7 @@
     }
 
     .exp-title {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
         line-height: var(--lnh140);
         margin: 0 0 3rem;
         padding: 0 1.5rem;      
@@ -38,7 +38,7 @@
     }
 
     .skills-title {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     }
 
     .skills-visual {
